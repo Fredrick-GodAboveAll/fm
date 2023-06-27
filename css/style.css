@@ -1,10 +1,11 @@
 /* THIS IS WHERE ALL THE STYLING WILL BE DONE */
 
+
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: url('project tools/Poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('project tools/PoppinsPoppins-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -13,16 +14,17 @@
     --first-color: #0e2431;
     --second-color: #6a59d1;
     --third-color: #777;
+    --forth-color: rgb(126, 115, 232);
 
     /* hover colors */
-    --hover-color: #614fd0;
+    --hover-color: #f5a905;
     
     /* background colors */
     --body-bg-color: #fefefe;
     --card-bg-color: #fff;
     --modal-bg-color: #fff;
     --bg-transparent-color: rgba(0, 0, 0, 0.1);
-    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(125, 67, 2, 0.1);
     --transparent-color-02: rgba(106, 89, 200, 0.1);
     --line-color: #d7d7d7;
 
@@ -33,7 +35,7 @@
     --box-shadow: 0px 0px 20px rgb(0 0 0 / 10px);
 
     /* font size */
-    --small-font-size: 0.9rem;
+    --small-font-size: 0.9em; /* mistake */
     --normal-font-size: 1rem;
 
     /* scroll bar colors */
@@ -77,17 +79,119 @@ header {
     top: 0;
     left: 0;
     backdrop-filter: blur(20px);
+    transition: .6s ease;
 }
 
-.nav-bar {
+.nav-bar{
     position: relative;
-    height: calc(4rem 1rem);
-    max-width: 1250px;
+    height: calc(4rem + 1rem);
+    max-width: 1050px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     padding: 0 20px;
     transition: .6s ease;
+}
+
+.nav-bar .logo {
+    color: var(--first-color);
+    font-size: 1.3em; /* mistake */
+    font-weight: 600;
+}
+
+.nav-items a {
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+.nav-items a:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-items a:hover {
+    color: var(--forth-color);
+    text-decoration: underline;
+}
+
+.home {
+    position: relative;
+    max-width: 1050px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 2rem;
+    flex-direction: column;
+}
+
+.home .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home-container .media-icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.home-container .media-icons a {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.home-container .media-icons a:hover {
+    color: var(--hover-color);
+}
+
+
+.home-container .info h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.home-container .info h2 span {
+    color: rgb(103, 103, 240);
+}
+
+.home-container .info h3 {
+    color: var(--third-color);
+    font-feature-settings: 1.3rem;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.home-container .info p {
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    max-width: 350px;
+}
+    
+.btn {
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background: var(--hover-color);
+}
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
