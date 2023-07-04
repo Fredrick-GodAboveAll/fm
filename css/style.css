@@ -1,14 +1,138 @@
 /* THIS IS WHERE ALL THE STYLING WILL BE DONE */
-
-
-
 @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('Poppins/Poppins-ExtraLight.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('Poppins/Poppins-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     src: url('Poppins/Poppins-Regular.ttf') format('truetype');
   }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('Poppins/Poppins-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('Poppins/Poppins-SemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('Poppins/Poppins-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('Poppins/Poppins-ExtraBold.ttf') format('truetype');
+  }
 
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('Poppins/Poppins-Black.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 100;
+    src: url('Poppins/Poppins-ThinItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 200;
+    src: url('Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    src: url('Poppins/Poppins-LightItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    src: url('Poppins/Poppins-Italic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    src: url('Poppins/Poppins-MediumItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+    src: url('Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 700;
+    src: url('Poppins/Poppins-BoldItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    src: url('Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 900;
+    src: url('Poppins/Poppins-BlackItalic.ttf') format('truetype');
+  }
+  
 
 :root {
 
@@ -37,7 +161,7 @@
     --box-shadow: 0px 0px 20px rgb(0 0 0 / 10px);
 
     /* font size */
-    --small-font-size: 0.9em; /* mistake */
+    --small-font-size: 0.9rem; /* mistake */
     --normal-font-size: 1rem;
 
     /* scroll bar colors */
@@ -52,7 +176,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -154,6 +278,7 @@ header {
 
 .home-container .info h2 {
     font-size: 3rem;
+    font-style: normal;
     font-weight: 600;
     line-height: 50px;
 }
@@ -215,17 +340,16 @@ header {
     text-decoration: underline;
 }
 
-/*
+
 .home .scroll-down {
-    background-color: #f5a905;
     font-weight: 500;
-    margin-top: 25px;
+    margin-top: 5px;
     padding: 5px 20px;
     letter-spacing: 1px;
     border-radius: 30px;
-    text-decoration: underline;
+    animation: arrow-down ease 2s infinite;
 }
-*/
+
 
 .home .scroll-down i {
     color: var(--second-color);
@@ -270,7 +394,14 @@ header {
     font-weight: 800;
     margin-bottom: 2rem;
     background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
-    --webkit-background-clip: text;
-    --webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     opacity: .1;
+}
+
+.section-title-02 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    transform: translateY(-80px);
 }
