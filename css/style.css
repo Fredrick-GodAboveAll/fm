@@ -391,9 +391,9 @@ header.sticky .nav-bar {
 }
 
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -406,11 +406,11 @@ header.sticky .nav-bar {
 }
 
 .sub-section {
-    position: relative;
-    width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 6rem 0;
+  position: relative;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 0;
 }
 
 .section-title-01 {
