@@ -207,22 +207,30 @@ body {
 
 .heading {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2rem;
   color: var(--black);
   text-transform: uppercase;
   font-weight: bolder;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
   
-  
-.link-btn {
+
+.btn {
   display: inline-block;
-  padding: .6rem 1rem;
+  background: none;
+  border: 2px solid black;
   border-radius: .5rem;
-  background-color: var(--blue);
+  padding: .6rem 1rem;
+  font-size: 14px;
   cursor: pointer;
-  font-size: 1rem;
-  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1.6rem;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .link-btn:hover {
@@ -544,7 +552,7 @@ body {
   width: 100%;
   height: 100%;
   border: 2px solid var(--text-color-light);
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   padding: 1.5rem;
   font-size: var(--normal-font-size);
   font-family: var(--title-color);
@@ -555,8 +563,8 @@ body {
 
 .contact__form-tag {
   position: absolute;
-  top: -.75rem;
-  left: 1.25rem;
+  top: -.85rem;
+  left:1.23rem;
   z-index: 10;
   background-color: var(--body-color);
   color: var(--title-color);
@@ -581,12 +589,11 @@ body {
   font-weight: var(--font-semi-bold);
   cursor: pointer;
   outline: none;
-  margin-top: .75rem;
+  margin-top: .4rem;
 }
 
 .contact__form .contact__button i {
   font-size: 1.5rem;
-  /* font-weight: initial; */
 }
 
 .contact__message {
@@ -951,6 +958,8 @@ body {
 
 
 }
+
+
 
 
 /* special */
